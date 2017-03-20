@@ -1,0 +1,8 @@
+<h5>Leadership Team</h5>
+<ul>
+  {{#each model as |leadership|}}
+  <li>{{leadership.givenName}} {{leadership.surname}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'team'}}Back{{/link-to}}

@@ -1,0 +1,8 @@
+<h5>Employees</h5>
+
+<ul>
+  {{#each model as |employee|}}
+  <li>{{#link-to 'team.employee' employee}} {{employee.givenName}} {{/link-to}}</li>
+  {{/each}}
+</ul>
+{{#link-to 'team'}}Back{{/link-to}}
